@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.5 on win32)" generated="20220723 22:05:40.965" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="f:\robotFramework\prueba1\tasks.robot">
+<test id="s1-t1" name="Open Browser and Log in" line="15">
+<kw name="Open Intranet Robocorp">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/#/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20220723 22:05:41.515" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220723 22:05:41.536" level="INFO">Created download root directory: C:\Users\Connectis\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220723 22:05:41.536" level="INFO">Created symlink directory: C:\Users\Connectis\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220723 22:05:41.538" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220723 22:05:42.601" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20220723 22:05:42.601" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20220723 22:05:42.601" level="INFO">Opening url 'https://robotsparebinindustries.com/#/'</msg>
+<status status="PASS" starttime="20220723 22:05:41.514" endtime="20220723 22:05:43.169"/>
+</kw>
+<status status="PASS" starttime="20220723 22:05:41.514" endtime="20220723 22:05:43.169"/>
+</kw>
+<kw name="Log in">
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>username</arg>
+<arg>Maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220723 22:05:43.172" level="INFO">Typing text 'Maria' into text field 'username'.</msg>
+<status status="PASS" starttime="20220723 22:05:43.171" endtime="20220723 22:05:43.238"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>password</arg>
+<arg>thoushallnotpass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220723 22:05:43.238" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20220723 22:05:43.267" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220723 22:05:43.296" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220723 22:05:43.238" endtime="20220723 22:05:43.296"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220723 22:05:43.299" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220723 22:05:43.298" endtime="20220723 22:05:43.321"/>
+</kw>
+<status status="PASS" starttime="20220723 22:05:43.170" endtime="20220723 22:05:43.321"/>
+</kw>
+<status status="PASS" starttime="20220723 22:05:41.513" endtime="20220723 22:05:43.322"/>
+</test>
+<doc>Robot que hace un login</doc>
+<status status="PASS" starttime="20220723 22:05:40.970" endtime="20220723 22:05:43.323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
